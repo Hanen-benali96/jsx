@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import style from './style.css';
+import img from "./hanen.jpeg";
+import video from "./myVideo.mp4";
 import './App.css';
-
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <header className="App-header">
+        
+        <div style={{border:"solid 1px black",maxWidth:"100vw"}}>
+  
+        <h1 className="title red">Hanen </h1>
+  
+        
+        
+        <img src={img}/> 
+        {"\n"}
+      
+        <img src='./hanen.jpeg'/>
+        {"\n"}
+        </div>
+  
+        <video width="320" height="240" autostart autoPlay controls src={video} type="video/mp4"/>
+  
+       
+        </header>
     </div>
   );
 }

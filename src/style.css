@@ -1,0 +1,5 @@
+.title,.red {
+    text-align:inherit;
+    text-decoration:dashed;
+    color: red;
+}
